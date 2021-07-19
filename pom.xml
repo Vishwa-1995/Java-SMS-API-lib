@@ -50,6 +50,18 @@
         <maven.compiler.target>14</maven.compiler.target>
     </properties>
 
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>jdk-14.0.2-config</id>-->
+<!--            <activation>-->
+<!--                <jdk>1.8</jdk>-->
+<!--            </activation>-->
+<!--            <properties>-->
+<!--                <javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>-->
+<!--            </properties>-->
+<!--        </profile>-->
+<!--    </profiles>-->
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
         <dependency>
