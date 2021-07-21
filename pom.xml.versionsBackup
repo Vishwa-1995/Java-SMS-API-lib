@@ -6,7 +6,7 @@
 
     <groupId>net.adeonatech</groupId>
     <artifactId>SmsAPI</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>Java Send SMS lib</name>
     <description>Send SMS API library by Adeona Technologies</description>
