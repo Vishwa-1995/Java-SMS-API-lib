@@ -6,7 +6,7 @@ import dto.TokenResponse;
 import java.io.IOException;
 
 public interface SendSMS {
-    TokenResponse getToken(TokenBody tokenBody) throws IOException, InterruptedException;
+    TokenResponse getToken(TokenBody tokenBody) throws IOException;
 
-    SendTextResponse sendText(SendTextBody sendTextBody, String token) throws IOException, InterruptedException;
+    SendTextResponse sendText(SendTextBody sendTextBody, String token) throws IOException;
 }
