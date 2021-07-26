@@ -2,16 +2,26 @@ package dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SendTextResponse {
+public class TransactionResponse {
 
+    @JsonProperty("transaction_id")
+    private String transaction_id;
     @JsonProperty("errCode")
     private String errCode;
     @JsonProperty("data")
-    private Data data;
+    private DataTransaction dataTransaction;
     @JsonProperty("comment")
     private String comment;
     @JsonProperty("status")
     private String status;
+
+    public String getTransaction_id() {
+        return transaction_id;
+    }
+
+    public void setTransaction_id(String transaction_id) {
+        this.transaction_id = transaction_id;
+    }
 
     public String getErrCode() {
         return errCode;
@@ -21,12 +31,12 @@ public class SendTextResponse {
         this.errCode = errCode;
     }
 
-    public Data getData() {
-        return data;
+    public DataTransaction getDataTransaction() {
+        return dataTransaction;
     }
 
-    public void setData(Data data) {
-        this.data = data;
+    public void setDataTransaction(DataTransaction dataTransaction) {
+        this.dataTransaction = dataTransaction;
     }
 
     public String getComment() {
